@@ -16,7 +16,9 @@ eureka:
 spring:
   application:
     name: school-service    #service name
- 
+
 logging:
   level:
     com.charter.eurekaClientSchoolService: DEBUG
+
+

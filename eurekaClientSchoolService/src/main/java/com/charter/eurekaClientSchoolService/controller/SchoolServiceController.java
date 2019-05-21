@@ -1,5 +1,6 @@
 package com.charter.eurekaClientSchoolService.controller;
 
+import com.charter.eurekaClientSchoolService.service.StudentServiceDelegate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
@@ -15,6 +16,15 @@ import org.springframework.web.client.RestTemplate;
 public class SchoolServiceController {
     @Autowired
     RestTemplate restTemplate;
+
+    @Autowired
+    StudentServiceDelegate studentServiceDelegate;
+
+    @RequestMapping(value = "/getSchoolDetailsDelegate/{schoolname}", method = RequestMethod.GET)
+    public String getStudentsDelegate(@PathVariable String schoolname) {
+        System.out.println("Going to call student service to get data!");
+        return studentServiceDelegate.callStudentServiceAndGetData(schoolname);
+    }
  
     @RequestMapping(value = "/getSchoolDetails/{schoolname}", method = RequestMethod.GET)
     public String getStudents(@PathVariable String schoolname)
