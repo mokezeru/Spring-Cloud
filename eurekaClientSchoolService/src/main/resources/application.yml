@@ -22,3 +22,8 @@ logging:
     com.charter.eurekaClientSchoolService: DEBUG
 
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
