@@ -23,6 +23,6 @@ class ZipkinController {
             e.printStackTrace();
         }
 
-        return "John Smith";
+        return "Ahmed Bereket";
     }
 }

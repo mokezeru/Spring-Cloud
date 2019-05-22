@@ -1,27 +1,27 @@
 server:
   port: 9098    #port number
- 
+
+spring:
+  application:
+    name: school-service    #service name
+
 eureka:
   instance:
     leaseRenewalIntervalInSeconds: 1
     leaseExpirationDurationInSeconds: 2
   client:
     serviceUrl:
-      defaultZone: http://127.0.0.1:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
     healthcheck:
       enabled: true
     lease:
       duration: 5
  
-spring:
-  application:
-    name: school-service    #service name
-
 logging:
   level:
     com.charter.eurekaClientSchoolService: DEBUG
 
-
+#For Hystrix dashbord
 management:
   endpoints:
     web:

@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Client1Controller {
  
-    @Value("${msg:Hello world - Config Server is not working..pelase check}")
+    @Value("${msg:Hello world - Config Server is not working..please check}")
     private String msg;
  
     @RequestMapping("/msg")

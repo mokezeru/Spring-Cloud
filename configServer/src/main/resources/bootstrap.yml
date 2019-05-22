@@ -8,7 +8,7 @@ spring:
     config:
       server:
         git:
-          uri: C:\\Charter\\configServer-repo
+          uri: C:\\Charter\\SpringCloud\\configServer-repo
 
 #Disable security of the Management endpoint
 management:
