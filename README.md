@@ -16,23 +16,35 @@ config-server-client-production.properties
 #Eureka URL
 http://localhost:8761
 
-#Eureka Client StudentServie API
+#Admin URL
+http://localhost:8761/admin
+
+#TO access StudentServie API dierectly
 http://localhost:8098/getStudentDetailsForSchool/abcschool
 
-#Eureka Client SchoolServie API
+#To access SchoolServie API directly
 http://localhost:9098//getSchoolDetails/abcschool
+
+#To access EmployeeService directly
+http://localhost:8011/findEmployeeDetails/111
 
 #Eureka Client SchoolServie API to check Hystrix
 http://localhost:9098//getSchoolDetailsDelegate/abcschool
 
-#Hystix dashboard URL
+#Hystix dashboard URL for SchoolService
 http://localhost:9098//hystrix
 
-#Hystrix Stream
+#Hystix dashboard URL for ZuulGateway
+http://localhost:8081/hystrix
+
+#Hystrix Stream for SchoolService
 http://localhost:9098//actuator/hystrix.stream
 
 #To access the StudentServcie via the Zuul Gateway using Eureka service name
 http://localhost:8081/student-service/getStudentDetailsForSchool/abcschool
+
+#To access the EmployeeServcie via the Zuul Gateway using Eureka service name
+http://localhost:8081/employee-service/findEmployeeDetails/111
 
 #To run the Zipkin Server
 java -jar zipkin-server-2.12.9-exec.jar
@@ -53,3 +65,6 @@ http://localhost:9093/backend
 
 #To access ribbon backend services via from ribbon client load balanced and see the effect
  http://localhost:9090/client/frontend
+
+#To access EmployeeService
+ http://localhost:8011/findEmployeeDetails/111

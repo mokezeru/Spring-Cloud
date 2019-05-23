@@ -5,17 +5,18 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.1.4.RELEASE</version>
+		<version>2.1.5.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.charter</groupId>
-	<artifactId>eurekaServer</artifactId>
+	<artifactId>eurekaAdminServer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>eurekaServer</name>
+	<name>eurekaAdminServer</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
 		<java.version>1.8</java.version>
+		<spring-boot-admin.version>2.1.5</spring-boot-admin.version>
 		<spring-cloud.version>Greenwich.SR1</spring-cloud.version>
 	</properties>
 
@@ -23,10 +24,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -38,21 +35,13 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-zipkin</artifactId>
+			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-sleuth</artifactId>
-		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>de.codecentric</groupId>
-			<artifactId>spring-boot-admin-server</artifactId>
-			<version>2.1.5</version>
 		</dependency>
 	</dependencies>
 
@@ -62,6 +51,13 @@
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
 				<version>${spring-cloud.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>de.codecentric</groupId>
+				<artifactId>spring-boot-admin-dependencies</artifactId>
+				<version>${spring-boot-admin.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
