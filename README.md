@@ -1,4 +1,4 @@
-#ConfigServer URL <br \>
+#ConfigServer URL -
 http://localhost:8888/config-server-client/development <br \>
 http://localhost:8888/config-server-client/production <br \>
 
