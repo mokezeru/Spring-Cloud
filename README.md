@@ -1,6 +1,6 @@
-#ConfigServer URL -
-http://localhost:8888/config-server-client/development <br \>
-http://localhost:8888/config-server-client/production <br \>
+#ConfigServer URL
+http://localhost:8888/config-server-client/development
+http://localhost:8888/config-server-client/production 
 
 #ConfigServer-repo location
 C:\\Charter\\SpringCloud\\configServer-repo
