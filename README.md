@@ -3,7 +3,9 @@
 * http://localhost:8888/config-server-client/production 
 
 ## ConfigServer-repo locatio
-* C:\\Charter\\SpringCloud\\configServer-repo)
+```
+* C:\\Charter\\SpringCloud\\configServer-repo 
+```
 
 ## ConfigCLient URL
 * http://localhost:8080/msg
