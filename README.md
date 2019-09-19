@@ -1,6 +1,5 @@
 ## ConfigServer URL
-http://localhost:8888/config-server-client/development
-http://localhost:8888/config-server-client/production 
+http://localhost:8888/config-server-client/development                                                         http://localhost:8888/config-server-client/production 
 
 ## ConfigServer-repo locatio
 C:\\Charter\\SpringCloud\\configServer-repo)
