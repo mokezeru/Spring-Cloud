@@ -2,9 +2,9 @@
 * http://localhost:8888/config-server-client/development
 * http://localhost:8888/config-server-client/production 
 
-## ConfigServer-repo locatio
+## ConfigServer-repo location
 ```
-* C:\\Charter\\SpringCloud\\configServer-repo 
+C:\\Charter\\SpringCloud\\configServer-repo 
 ```
 
 ## ConfigCLient URL
@@ -12,9 +12,9 @@
 
 ## Config files in the repo
 ```
-* config-server-client.properties
-* config-server-client-development.properties
-* config-server-client-production.properties
+- config-server-client.properties
+- config-server-client-development.properties
+- config-server-client-production.properties
 ```
 
 ## Eureka URL
