@@ -59,10 +59,10 @@ http://localhost:8083/service2
 http://localhost:8084/service3
 
 ## Run ribbon backend services/ribbonServer at Port 9091,9092,9093
-*** To access ribbon backend services directly ***
-http://localhost:9091/backend
-http://localhost:9092/backend
-http://localhost:9093/backend
+#### To access ribbon backend services directly ####
+* http://localhost:9091/backend
+* http://localhost:9092/backend
+* http://localhost:9093/backend
 
 ## To access ribbon backend services via from ribbon client load balanced and see the effect
  http://localhost:9090/client/frontend
