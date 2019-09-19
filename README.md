@@ -7,7 +7,7 @@
 C:\\Charter\\SpringCloud\\configServer-repo 
 ```
 
-## ConfigCLient URL
+## ConfigClient URL
 * http://localhost:8080/msg
 
 ## Config files in the repo
